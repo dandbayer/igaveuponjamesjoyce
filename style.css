@@ -1,0 +1,101 @@
+* {
+    background: black;
+    color: white;
+    font-family: 'Bitter', serif;
+    margin: 0;
+}
+
+#banner {
+    background-image: url('banner.png');
+    background-position: center;
+    background-size: auto 100%;
+    min-height: 400px;
+    width: 100vw;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.text h1, h2 {
+    margin: 1em;
+    line-height: 1em;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    --background-color: red;
+    --background-color-dark: darkred;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 160px;
+    width: 160px;
+    margin: 1em;
+    padding: 2em;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--background-color);
+    box-shadow: 6px 6px 0 var(--background-color-dark);
+}
+
+.button:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+}
+
+.button--secondary {
+    --background-color: green;
+    --background-color-dark: darkgreen;
+}
+
+#giveup, #try {
+    text-align: center;
+    margin: 1em;
+}
+
+#value1, #value2 {
+    background-color: rgb(36, 39, 39);
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 8px;
+    margin: 0.5em;
+}
+
+footer {
+    padding: 1.5em;
+    text-align: center;
+}
+
+@media only screen and (max-width:430px) {
+    #buttons {
+        flex-direction: column;
+    }
+    .text {
+        margin: 0 0.75em;
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width:900px) {
+    .text {
+        margin: 0 0.75em;
+    }
+}
+
