@@ -16,7 +16,7 @@ giveUp.addEventListener('mousedown', () => {
     intervalId1 = setInterval(() => {
         countGiveUp += 1;
         updateValue1();
-    }, 200);
+    }, 150);
 });
 
 document.addEventListener('mouseup', () => clearInterval(intervalId1));
@@ -34,7 +34,7 @@ keepTrying.addEventListener('mousedown', () => {
     intervalId2 = setInterval(() => {
         countKeepTrying += 1;
         updateValue2();
-    }, 200);
+    }, 150);
 });
 
 document.addEventListener('mouseup', () => clearInterval(intervalId2));
